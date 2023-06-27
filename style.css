@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Geologica', sans-serif;
+
+}
+body{
+    overflow-x: hidden;
+}
+.sidebar{
+    position: fixed;
+    top: 50%;
+    
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    z-index: 1;
+    
+}
+.sidebar a:hover{
+    transform: translateX(0px);
+    background-color: rgb(116, 108, 108);
+}
+#element{
+    font-size: 2rem;
+}
+.sidebar a{
+    text-decoration: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    border-radius: 5px;
+    width: 250px;
+    height: 7.5vh;
+    margin: 10px 0px;
+    font-size: 1.3rem;
+    padding: 2px;
+    background-color: rgb(37, 33, 33);
+    
+    color: #fff;
+
+    transform: translateX(-191px);
+    -webkit-transform: translateX(-191px);
+    -ms-transform: translateX(-191px);
+    transition: all 0.5s linear;
+    -webkit-transition: all 0.5s linear;
+    -ms-transition: all 0.5s linear;
+
+}
+a i{
+    animation: letszoom 2s linear alternate-reverse infinite;
+    padding: 20px;
+}
+@keyframes letszoom{
+    from{
+        transform: scale(0.7);
+    }
+    to{
+        transform: scale(1.2);
+    }
+}
+#mainsection{
+    
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#mainsection::before{
+    /* border: 2px solid red; */
+    content: "";
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    background: url("./img/back1.jpg") no-repeat center center/cover;
+    z-index: -1;
+    opacity: 0.8;
+}
+#mainsection h1{
+    font-size: 4.5rem;
+    backdrop-filter: blur(7px);
+    text-shadow: 4px 4px 4px rgb(30, 28, 28);
+}
+#mainsection p{
+    font-size: 1.5rem;
+    backdrop-filter: blur(7px);
+}
+#contactbox{
+    /* border: 2px solid red; */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.contacttext{
+    /* border: 2px solid green; */
+    height: 35vh;
+    width: 50%;
+    /* line-height: 10vh; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(8px);
+    /* border: 2px solid #fff; */
+    border-radius: 5px;
+
+}
+.contactheading{
+    margin: 5vh 5vw;
+    
+    
+}
+.contactheading h2{
+    font-size: 3rem;
+}
+.contactremain{
+    text-align: center;
+    /* backdrop-filter: blur(10px); */
+}
+.contactremain h4{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+#contactbox::before{
+    content: "";
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    background: url("./img/back2.jpg") no-repeat center center/cover;
+    z-index: -1;
+    opacity: 0.8;
+}
+.formcontent{
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 4vh 2vw;
+    width: 50%;
+    height: 50vh;
+    backdrop-filter: blur(8px);
+}
+.formcontent h2{
+    text-align: center;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: white;
+    /* background-color: rgb(218, 229, 234, 0.74); */
+}
+.formcontent form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.formcontent form input , textarea{
+    background-color: rgb(218, 229, 234, 0.74);
+    font-size: 1rem;
+    margin: 0.5rem 0.5rem;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    padding: 3px 3px;
+}
+.formcontent form input{
+    width: 70%;
+    text-align: center;
+    
+}
+.btn{
+    margin-top: 0.5rem;
+    font-weight: bold;
+    background: transparent;
+}
+#infobox{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+    text-align: center;
+}
+.infobeg{
+    content: "";
+    position: absolute;
+    height: 30vh;
+    width: 100vw;
+    background: url("./img/back3.jpg") no-repeat center center/cover;
+    z-index: -1;
+    /* opacity: 0.8; */
+}
+.infobeg h4{
+    font-size: 3rem;
+    color: #fff;
+    backdrop-filter: blur(8px);
+}
+.infoend{
+    display: flex;
+    justify-content: center;
+    margin-top: 30vh;
+    background-color: rgb(232, 229, 229);
+    height: 70vh;
+    width: 100%;
+}
+.box{
+    
+    width: 30%;
+    height: 40vh;
+    margin: 2vh 2vh;
+    padding: 1vh 1vh;
+    background-color: rgb(252, 243, 228);
+    box-shadow: 5px 5px 5px 5px rgb(252, 243, 228);
+    border-radius: 10px;
+}
+.box i{
+    font-size: 50px;
+}
+.box a{
+    text-decoration: none;
+}
+.box h5 i{
+    font-size: 30px;
+}
+#guidebox{
+    height: 100vh;
+    width: 100%;
+    background-color: #f4f0d8;
+}
+.guideheading{
+    background-color: #fff;
+    height: 20vh;
+    border-radius: 25px;
+}
+.guideheading h4{
+    text-align: center;
+    /* margin-top: 20vh; */
+    font-size: 2rem;
+}
+.guideheading p{
+    text-align: center;
+    /* margin-top: 20vh; */
+    font-size: 1.2rem;
+}
+.guidetext{
+    display: flex;
+    justify-content: space-around;
+    top: 10vh;
+}
+.box2{
+    width: 30%;
+    height: 40vh;
+    background-color: rgb(252, 243, 228);
+    box-shadow: 5px 5px 5px 5px rgb(252, 243, 228);
+    border-radius: 10px;
+    text-align: center;
+    padding-top: 10vh;
+}
+
+
+@media screen and (max-width: 500px){
+    .infoend{
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .box{
+        width: 85%;
+        height: 20vh;
+        margin: 1vh 1vh;
+    }
+}
